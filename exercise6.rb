@@ -8,7 +8,5 @@ end
 
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 grocery_list << "rice"
-grocery_list.count
-grocery_list.include?
-
+puts grocery_list.count
 list(grocery_list)
