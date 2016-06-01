@@ -9,10 +9,12 @@
 #Output the result in a full sentence using string interpolation.
 
 
-
-def converter(f)
-  print "Enter in a temperature in f"
-  f = gets.chomp
-     c = (f - 32) * 5/9
-   puts "#{f} in Fahrenheit is now #{c} in Celsius"
+def temp
+  print "Please enter your temperature in Fahrenheit: "
+  f = gets.chomp.to_i
+  c = (f - 32) * 5/9
+   puts "Your temperature in Fahrenheit, is #{c} in Celsius"
+  return c
 end
+
+temp
