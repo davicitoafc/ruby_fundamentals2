@@ -5,6 +5,13 @@ students = {
   :cohort3 => 22
 }
 
-students.each do |key, value|
-  puts "#{key}: #{value} students"
+#Method that iterates through hash to display values
+def hash(students)
+  students.each do |key, value|
+    puts "#{key}: #{value} students"
+  end
 end
+
+#Prints cohort names and adds cohort4 number to hash
+students[:cohort4] = 43
+hash(students)
