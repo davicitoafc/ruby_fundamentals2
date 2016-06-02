@@ -13,7 +13,7 @@ def hash(students)
   puts " "
 end
 
-#expansion method iterates through student hash and adds 5% to each class
+#Expansion method iterates through student hash and adds 5% to each class
 def expansion(students)
   students.each do |key, value|
     expanded = (value + (value * 0.05).floor)
@@ -34,3 +34,7 @@ hash(students.keys)
 #Prints out expansion
 puts "Expanded Cohort list"
 expansion(students)
+
+#Deleted 2nd Cohort
+students.delete(:cohort2)
+hash(students)
