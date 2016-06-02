@@ -20,3 +20,4 @@ puts grocery_list.count
 puts grocery_list[1]
 list(grocery_list)
 search(grocery_list)
+list(grocery_list.sort)
